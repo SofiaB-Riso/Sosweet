@@ -323,15 +323,34 @@
   }
 
   .slp{
-    height: 360px;
-    width: 320px;
+    height: 100%;
+    min-height: 300px;
+    min-width: 350px;
+    width: 23%;
     border-radius: 14px;
-    background-color: #f2d3d1;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    padding-top: 40px;
-    align-items: center;
+  }
+
+  .p1{
+    background-image: url(prom_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .p2{
+    background-image: url(prom_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .p3{
+    background-image: url(prom_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
   }
 
   .slp:hover{
@@ -343,80 +362,6 @@
   } 
   label{
     display: none;
-  }
-
-  .p1 p{
-    color: #AE3B50;
-    font-weight: 500;
-    font-size: 70px;
-    text-align: center;
-  }
-
-  .p1 img{
-    width: 200px;
-    margin: 30px;
-  }
-
-  .p2 span{
-    color: #CE3D4C;
-    font-size: 80px;
-    text-align: center;
-    margin-top: -10px;
-  }
-
-  .p2 p{
-    color: white;
-    font-size: 40px;
-    font-weight: lighter;
-    text-align: center;
-  }
-
-  .p2{
-    position: relative;
-  }
-
-  .p2 img{
-    width: 270px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: -50px;
-    margin-bottom: -10px;
-  }
-
-  .p3 span{
-    color: #AE3B50;
-    font-weight: 500;
-    font-size: 70px;
-    text-align: center;
-  }
-
-  .p3 div>p{
-    color: #AE3B50;
-    font-size: 90px;
-    margin-left: 15px;
-    text-align: top;
-  }
-
-  .p3 p{
-    color: #AE3B50;
-    font-weight: 500;
-    font-size: 90px;
-    display: flex;
-    align-items: center;
-  }
-
-  .p3 div{
-    display: flex;
-    flex-direction: row;
-    height: 150px;
-    padding-top: 0;
-  }
-
-  .p3 div>img{
-    height: 200px;
-    margin-left: -50px;
-    margin-top: -20px;
   }
 
   footer{
@@ -581,8 +526,9 @@
   .sliderP{
     justify-self: center;
     width: 60%;
+    min-width: 630px;
     padding: 40px 0 0 ;
-    height: 70vh;
+    height: 90vh;
     overflow: hidden;
     border-radius: 14px;
   }
@@ -590,7 +536,8 @@
   .slidesP{
     justify-self: left;
     justify-content: left;
-    width: 300%;
+    width: 100%;
+    min-width: 630px;
     height: 90%;
     display: flex;
     border-radius: 14px;
@@ -626,116 +573,119 @@
   }
 
   .slp{
-    position: relative;
     height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 630px;
     border-radius: 14px;
-    background-color: #f2d3d1;
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;
-    align-items: center;
-  }
-
-  
-   #rp1:checked ~ .p1{
-    margin-left: 0%;
-  }
-    #rp2:checked ~ .p1{
-    margin-left: -33.33%;
-  }
-    #rp3:checked ~ .p1{
-    margin-left: -66.66%;
-  }
-
-  .p1{
-    width: 33.33%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-    .p1s p{
-    color: #AE3B50;
-    font-weight: 500;
-    font-size: 110px;
-    text-align: center;
-  }
-
-  .p1s img{
-    width: 400px;
-    margin: 30px;
+    transition: background-image 0.5s ease-in-out; 
   }
 
   .p2{
-    width: 33.33%;
-    align-items: center;
-    display: flex;
-    position: relative;
-  }
-  .p2 span{
-    color: #CE3D4C;
-    font-size: 140px;
-    text-align: center;
-    margin-top: 70px;
-  }
-
-  .p2 p{
-    color: white;
-    font-size: 80px;
-    margin-top: 10%;
-    width: 100%;
-    font-weight: lighter;
-    text-align: center;
-  }
-
-
-  .p2 img{
-    width: 400px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: -50px;
-    margin-bottom: -10px;
+    background-image: url(prom_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
   }
 
   .p3{
-    width: 33.33%;
+    background-image: url(prom_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
   }
 
-  .p3 span{
-    color: #AE3B50;
-    margin-top: 18%;
-    font-weight: 500;
-    font-size: 150px;
-    text-align: center;
+
+  .item p{
+     font-size: 20px;
+     font-weight: bold;
+     margin: 20px 0;
+     transition: 0.3s;
   }
 
-  .p3 div>p{
-    color: #AE3B50;
-    font-size: 200px;
-    margin-left: 30px;
-    text-align: top;
+  .item:hover p{
+    color: #E9505F;
   }
 
-  .p3 p{
-    color: #AE3B50;
-    font-weight: 500;
-    font-size: 190px;
+  .doces{
+    width: 100%;
   }
 
-  .p3 div{
+  .desert{
+    width:80%;
+    max-width: 660px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 220px;
     display: flex;
-    flex-direction: row;
-    height: 270px;
-    padding-top: 0;
+    justify-content: left;
+    
   }
 
-  .p3 div>img{
-    height: 400px;
-    width: fit-content;
-    margin-top: -80px;
-    margin-left: -30px;
+  .item{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 25px;
   }
+  
+
+  .borda{
+    border:3px solid #F48D9D;
+    border-radius: 50%;
+    width: 150px;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: 0.3s;
+  } 
+ 
+  .foto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color:#EFD0CE;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .no{
+    width: 120px;
+  }
+
+  .se{
+    width: 100px;
+  }
+
+  .ce{
+    width: 130px;
+  }
+
+  .desert-slider {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.btn-left,
+.btn-right {
+    border: none;
+    color: #E9505F;
+    background-color: transparent;
+    font-size: 100px;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
     }
 
  

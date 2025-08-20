@@ -176,7 +176,7 @@
 
   .btxt{
     grid-area: txt;
-    height: 65vh;
+    height: 100%;
     width: 50%;
     background-color:rgba(247, 215, 216,0.8);
     align-items: center;
@@ -217,7 +217,7 @@
   .bimg{
     grid-area: img;
     width: 50%;
-    height: 65vh;
+    height: 100%;
     background-image: url(home_1.png);
     background-size: cover;
     background-position: center;
@@ -720,4 +720,5 @@
 
    
    
+
    

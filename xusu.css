@@ -1,0 +1,157 @@
+   *{padding: 0;
+    margin: 0;
+   }
+   @font-face {
+     font-family: 'dream';
+     src: url(fontes/dreaming-outloud-regular.otf) format('opentype');
+   }
+   /*lupa: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+     carrinho: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+     menu:<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>*/
+   
+   body{
+    height: 100vh;
+    width: 100%;
+    background-color:#FDF6EE;
+   }
+   .sonho{
+    font-family: 'dream', sans-serif;
+   }
+   .comforta{
+   font-family: "Comfortaa", sans-serif;
+   }
+   .magenta{
+    color: #E9505F;
+    fill: #E9505F;
+   }
+   .pink{
+    color: #F48D9D;
+    fill:#F48D9D;
+   }
+
+   .gridH{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;  
+    justify-self: center;
+    margin-top: 70px;
+   }
+   
+   .serch{
+    display: flex;
+    align-items: baseline;
+    justify-self: left;
+    color: #F48D9D;
+    font-weight: bold;
+   }
+
+   .serch:hover{
+    color: #E9505F;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   }
+   .serch:hover .lupa svg{
+    fill: #E9505F;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   }
+   .lupa:hover svg{
+    fill: #E9505F;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   }
+   .lupa:hover ~.serch{
+    color: #E9505F;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   }
+   .lupa svg{
+    margin-right: 15px;
+    width: 18px;
+    fill: #F48D9D;
+   }
+   .ss{
+    font-size: 45px;
+    color: #F48D9D;
+    justify-self: center;
+   }
+   .ss span{
+    color: #E9505F;
+   }
+   .icons{
+    display: flex;
+    gap: 34px;
+    align-items: baseline;
+    justify-self: right;
+   }
+   .cart svg{
+    width: 29px;
+    fill: #F48D9D;
+    transition: 0.3s ease-in-out;
+   }
+
+   .cart svg:hover{
+    fill: #E9505F;
+    cursor: pointer;
+   }
+
+   .user a{
+    color: transparent;
+    font-size: 30px;
+   }
+
+   .user{
+    width: 29px;
+    height: 30px;
+    background-image: url(usuario.svg);
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+   }
+
+   .user:hover{
+    background-image: url(usuarioR.svg);
+    cursor: pointer;
+   }
+
+   .pages{
+    width: 100%;
+    
+   }
+   .pages ul{
+    width: 100%;
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 45px;
+   }
+
+   .pages ul>li{
+    list-style: none;
+    font-weight:bold;
+    font-size: 20px;
+    padding-bottom: 30px;
+    transition: 0.3s;
+   }
+
+  .a{
+    color: #F48D9D;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+   .prince{
+    border-bottom: 3px solid #E9505F;
+    color: #E9505F;
+    z-index: 3;
+   }
+
+   .prince:hover{
+    cursor: pointer;
+   }
+
+  .pages ul>li:hover a{
+    color: #E9505F;
+    cursor: pointer;
+  }

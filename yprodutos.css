@@ -1,0 +1,289 @@
+      *{padding: 0;
+    margin: 0;
+   }
+   *:hover{
+    cursor: default;
+   }
+   @font-face {
+     font-family: 'dream';
+     src: url(fontes/dreaming-outloud-regular.otf) format('opentype');
+   }
+   /*lupa: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+     carrinho: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+     menu:<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>*/
+   
+   body{
+    height: 100vh;
+    width: 100%;
+    background-color:#FDF6EE;
+   }
+
+   body::-webkit-scrollbar {
+    display: none; 
+}
+   .sonho{
+    font-family: 'dream', sans-serif;
+   }
+   .comforta{
+   font-family: "Comfortaa", sans-serif;
+   }
+   .magenta{
+    color: #E9505F;
+    fill: #E9505F;
+   }
+   .pink{
+    color: #F48D9D;
+    fill:#F48D9D;
+   }
+
+   .gridH{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;  
+    justify-self: center;
+    margin: 70px 0 5vh;
+   }
+   
+   .serch{
+    display: flex;
+    align-items: baseline;
+    justify-self: left;
+    color: #F48D9D;
+    font-weight: bold;
+   }
+
+   .serch:hover{
+    color: #E9505F;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   }
+   .serch:hover .lupa svg{
+    fill: #E9505F;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   }
+   .lupa:hover svg{
+    fill: #E9505F;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   }
+   .lupa:hover ~.serch{
+    color: #E9505F;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   }
+   .lupa svg{
+    margin-right: 15px;
+    width: 18px;
+    fill: #F48D9D;
+   }
+   .ss{
+    font-size: 45px;
+    color: #F48D9D;
+    justify-self: center;
+   }
+   .ss span{
+    color: #E9505F;
+   }
+   .icons{
+    display: flex;
+    gap: 34px;
+    align-items: baseline;
+    justify-self: right;
+   }
+   .cart svg{
+    width: 29px;
+    fill: #F48D9D;
+    transition: 0.3s ease-in-out;
+   }
+
+   .cart svg:hover{
+    fill: #E9505F;
+    cursor: pointer;
+   }
+
+   .user a{
+    color: transparent;
+    font-size: 30px;
+   }
+
+   .user{
+    width: 29px;
+    height: 30px;
+    background-image: url(usuario.svg);
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+   }
+
+   .user:hover{
+    background-image: url(usuarioR.svg);
+    cursor: pointer;
+   }
+
+   .title{
+    display: flex;
+    color: #CE3D4C;
+    font-weight: 500;
+    font-size: 33px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: -3px 0;
+    padding: 8vh 0;
+    border-top:3px solid #f4eee6;;
+   }
+
+   .title a{
+    position: absolute;
+    text-decoration: none;
+    color: #CE3D4C;
+    left: 0;
+    margin-left: 4%;
+   }
+
+   .title a:hover{
+    cursor: pointer;
+   }
+
+   .cont{
+    margin-top: 5vh;
+    justify-self: center;
+    height: 60vh;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .disc{
+    width: 35%;
+   }
+
+   .disc h4{
+    color: #F48D9D;
+    font-size: 55px;
+    margin-bottom: 5vh;
+   }
+
+   .des{
+    color: #804B52;
+    font-weight: 600;
+    font-size: 24px;
+    width: 92%;
+    height: 25vh;
+    text-align: left;
+   }
+
+   .disc p{
+    color: #C35E6F;
+    font-size: 35px;
+    font-weight: 600;
+    margin: -2vh 0 8vh;
+   }
+
+   #btn{
+    width: 87%;
+    color: #fff;
+    background-color: #F48D9D;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    padding: 2vh 0;
+    border-radius: 8px;
+   }
+
+   #btn:hover{
+    cursor: pointer;
+   }
+   
+
+   .produto{
+    background-image: url(zmacaron_1.png);
+    filter: drop-shadow(0px 0px 40px rgba(206, 61, 76, 0.3));
+    height: 100%;
+    width: 55%;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: 30%;
+   }
+
+   .flav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .set{
+    height: 10vh;
+    width: 7vw;
+    background-color: #EFD0CE;
+    margin: 5% 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 6px;
+   }
+
+   .set:hover{
+    background-color: #DA9BA2;
+    cursor: pointer;
+   }
+
+   .down{
+    clip-path: polygon(50% 38%, 0% 0%, 100% 0%);
+   }
+
+   .up{
+    clip-path: polygon(50% 62%, 0% 100%, 100% 100%);
+   }
+
+   .d1{
+    background-image: url(zmacaron_3.png);
+   }
+   .d2{
+    background-image: url(zmacaron_1.png);
+   }
+   .d3{
+    background-image: url(zmacaron_2.png);
+   }
+   
+
+   .item{
+    width: 8vw;
+    height: 18vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+
+    footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 70%;
+    padding: 20px 0;
+    border-top: 3px solid #f4eee6;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #F48D9D;
+    font-weight: 500;
+    align-self: center;
+    font-size: 18px;
+  }
+
+  footer svg{
+    fill: #F48D9D;
+    width: 30px;
+  }
+  footer div{
+    width: fit-content;
+  }
+
+  section{
+    margin-bottom: 3%;
+  }
+
+
+   

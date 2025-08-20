@@ -159,7 +159,7 @@
   }
 
   .grid{
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -167,11 +167,13 @@
     grid-template-areas: "cart pay";
   }
 
-  .cart{
-    height: 100%;
-    width: 100%;
-    padding:5% 5% 0 7%;
+  .myCart{
+    height: fit-content;
+    justify-self: right;
+    width:95%;
+    padding:5% 0 0;
     grid-area: cart;
+    overflow: scroll;
     h4{
       font-weight: 300;
       font-size: 40px;
@@ -208,18 +210,18 @@
         font-size: 18px;
         margin-top: -2px;
         margin-right: 3%;
-        color: #804B52;
+        color: #C35E6F;
       }
       .mais{
         font-size: 16px;
         margin-bottom: -2px;
         margin-left: 3%;
-        color: #804B52;
+        color: #C35E6F;
         font-weight: 600;
       }
       p{
         font-size: 19px;
-        color:  #804B52;;
+        color:  #C35E6F;
       }
     }
   }
@@ -237,11 +239,56 @@
 
     .pay{
       background-color:rgba(247, 215, 216,0.8);
+      grid-area: pay;
+      height: 100%;
+      padding-top: 5%;
       div{
         display: flex;
         align-self: center;
         justify-self: center;
-        width: 90%;
-        height: 10%;
+        width: 85%;
+      }
+      .but{
+        height: 30%;
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+          background-color: #FDF6EE;
+          border:none;
+          width: 100%;
+          height: 50%;
+          border-radius: 12px;
+          font-size: 24px;
+          font-weight:bold;
+          color:#C35E6F;
+          cursor: pointer;
+        }
       }
     }
+
+    .total{
+      height: 20%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 4px #FDF6EE;
+      color: #C35E6F;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 5%;
+    }
+
+    .sub{
+      height: 20%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #F48D9D;
+      font-size: 30px;
+      font-weight: bold;
+    }
+

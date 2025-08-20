@@ -275,7 +275,7 @@
   .cont{
     width: 90%;
     justify-self: center;
-    height: 60vh;
+    height: 450px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5%;
@@ -489,10 +489,6 @@
 
   @media (min-width: 1800px){
 
-    .gridH{
-      margin-top: 12vh;
-    }
-
     .lupa svg{
       margin-right: 15px;
       width: 22px;
@@ -576,61 +572,6 @@
       color: #CE3D4C;
       font-size: 45px;
     }
-    .sobre{
-      width: 87%;
-      height: 80vh;
-      display: grid;
-      grid-template-rows: repeat(2,1fr);
-      grid-template-rows: repeat(2, 1fr);
-      row-gap: 10%;
-      justify-self: center;
-      margin: 5% 0 8%;
-    }
-    .ian{
-      height: 100%;
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      align-items: center;
-      gap: 2%;
-      justify-content: space-between;
-      grid-template-areas:
-      "im tx"
-      "tx2 im2";
-    }
-    .ian div{
-      margin: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .ian h4{
-      color: #CE3D4C;
-      font-size: 50px;
-      font-weight: 400;
-      margin-bottom: 4%;
-    }
-  
-    .ian p{
-      color: #8F575E;
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 2%;
-    }
-    .chef{
-      height: fit-content;
-      background-color: #f4eee6;
-      padding-top: 5%;
-      h2{color: #CE3D4C;
-      font-size: 50px;
-      font-weight: 400;
-      justify-self: center;
-    }
-    p{
-      color: #8F575E;
-      font-size: 30px;
-      justify-self: center;
-      margin: 2% 0% 3%;
-    }
-  }
     }
 /*tablet*/
     @media (max-width:1000px){
@@ -705,51 +646,4 @@
   }
 
 
-    }
-
-    @media(max-width:1070px){/*tablet*/
-      .cont{
-        width: 90%;
-        justify-self: center;
-        height: 25vh;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5%;
-        justify-content: space-around;
-      }
-      .visit{
-        margin: 7vh 0 4vh;
-        width: 100%;
-        height: fit-content;
-      }
-      .grid {
-        width: 90%;
-        height: fit-content;
-        justify-self: center;
-        display: grid
-;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-        "f3"
-        "f2"
-        "f1";
-        row-gap: 2%;
-      }
-      
-.baner {
-    margin-top: -3px;
-    width: 100%;
-    height: 45vh;
-    background-image: url(home_2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: 3px solid #f4eee6;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
     }

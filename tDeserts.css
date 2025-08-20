@@ -175,7 +175,7 @@
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(6, 10.5%);
-    grid-template-rows: repeat(3, 35%);
+    grid-template-rows: repeat(3, 70vh);
     grid-template-areas:
     "d1 d1 d2 d2 d3 d3"
     "d4 d4 d4 d5 d5 d5"
@@ -205,7 +205,7 @@
   .item h4{
     margin: 4vh 0;
     color: #CE3D4C;
-    font-size: clamp(20px, 30px, 40px);
+    font-size: 30px;
     width: 100%;
     text-align: center;
   }
